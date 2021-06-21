@@ -193,6 +193,8 @@ static Task OnDesiredPropertiesUpdate(TwinCollection desiredProperties, object u
             {
                 using (var pipeMessage = new Message(messageBytes))
                 {
+                    //pipeMessage.Properties.Add("VIN-PROP", "TRUCK1::" + counterValue);
+
                     foreach (var prop in message.Properties)
                     {
                         pipeMessage.Properties.Add(prop.Key, prop.Value);

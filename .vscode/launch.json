@@ -9,6 +9,7 @@
       "pipeTransport": {
         "pipeProgram": "docker",
         "pipeArgs": [
+          "-H tcp://pi@192.168.86.33",
           "exec",
           "-i",
           "CSharpModule",
